@@ -430,6 +430,39 @@ body {
     margin-top: 8px;
 }
 
+.infographic-card {
+    padding: 32px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.infographic-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(74, 158, 255, 0.15), 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(74, 158, 255, 0.2);
+}
+
+.infographic-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.infographic-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.infographic-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
 /* CTA Section */
 .cta-section {
     text-align: center;
