@@ -543,6 +543,110 @@ body {
     opacity: 0.8;
 }
 
+/* Why ITEP Matters Section */
+#why-matters {
+    position: relative;
+    overflow: hidden;
+}
+
+#why-matters::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse 50% 40% at 20% 50%, rgba(139, 92, 246, 0.04) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 80% 50%, rgba(6, 182, 212, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.thesis-label {
+    display: inline-block;
+    float: right;
+    padding: 6px 16px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-purple);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.why-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 64px;
+    font-style: italic;
+}
+
+.investment-card {
+    padding: 36px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.investment-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-blue), var(--accent-purple), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.investment-card:hover::before {
+    opacity: 1;
+}
+
+.investment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 40px rgba(74, 158, 255, 0.08);
+    border-color: rgba(74, 158, 255, 0.15);
+}
+
+.investment-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff 0%, var(--accent-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    opacity: 0.85;
+}
+
+.section-footer {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--glass-border);
+    font-style: italic;
+    opacity: 0.8;
+}
+
 /* CTA Section */
 .cta-section {
     text-align: center;
